@@ -20,6 +20,14 @@
             margin: auto;
         }
 
+        caption{
+            border: 1px solid black;
+            font-size: 2em;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.336);
+            color: black;
+        }
+
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -54,13 +62,16 @@
     -->
 
     <table>
+        <caption>
+            <strong>População das Unidades Federativas do Brasil</strong>
+        </caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade federativa</th>
-                <th>População</th>
-                <th>% da pop. total</th>
-                <th>País comparável (habitantes)</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col">População</th>
+                <th scope="col">% da pop. total</th>
+                <th scope="col">País comparável (habitantes)</th>
             </tr>
         </thead>
         <tbody>
@@ -256,7 +267,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="2">Total de Habitantes</th>
+                <th colspan="2" scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210 147 125</strong></td>
                 <td class="num"><strong>100%</strong></td>
                 <td></td>
